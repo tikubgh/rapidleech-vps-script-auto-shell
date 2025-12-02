@@ -1,7 +1,7 @@
 Code for ubuntu 22.04 only =
-=============================================================
+-----------------------------------------------------------------------
 
 add-apt-repository multiverse -y && apt update && apt install -y apache2 php libapache2-mod-php php-curl php-zip unzip wget rar unrar && a2enmod rewrite && systemctl restart apache2 && mkdir -p /var/www/html/rapid && cd /var/www/html/rapid && rm -rf * .??* && wget https://github.com/Th3-822/rapidleech/archive/refs/heads/master.zip && unzip master.zip && mv rapidleech-master/* . && rm -rf rapidleech-master master.zip && chown -R www-data:www-data /var/www/html/rapid && chmod -R 755 /var/www/html/rapid && mkdir -p files && chown www-data:www-data files && chmod 777 files && sudo systemctl restart apache2
-==========================================================================
+--------------------------------------------------------------------------
 
 http://VPS-IP/rapid/index.php
